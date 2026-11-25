@@ -7,13 +7,14 @@
 ## Sommaire
 
 1. [Présentation](#-1-présentation)
-2. [Fonctionnalités Principales](#-2-fonctionnalités-principales)
-3. [Architecture Technique](#-3-architecture-technique)
-4. [Scénarios de Démonstration Inclus](#-4-scénarios-de-démonstration-inclus)
-5. [Installation & Lancement Rapide](#-5-installation--lancement-rapide)
-6. [Authentification & Comptes de Test](#-6-authentification--comptes-de-test)
-7. [Tests Automatisés & Build](#-7-tests-automatisés--build)
-8. [Licence](#-8-licence)
+2. [Aperçu de l'Interface](#-2-aperçu-de-linterface)
+3. [Fonctionnalités Principales](#-3-fonctionnalités-principales)
+4. [Architecture Technique](#-4-architecture-technique)
+5. [Scénarios de Démonstration Inclus](#-5-scénarios-de-démonstration-inclus)
+6. [Installation & Lancement Rapide](#-6-installation--lancement-rapide)
+7. [Authentification & Comptes de Test](#-7-authentification--comptes-de-test)
+8. [Tests Automatisés & Build](#-8-tests-automatisés--build)
+9. [Licence](#-9-licence)
 
 ---
 
@@ -28,7 +29,38 @@
 
 ---
 
-## ✨ 2. Fonctionnalités Principales
+## 🖼️ 2. Aperçu de l'Interface
+
+### Accueil, Authentification & Navigation
+| Connexion & Création de compte (Split-Screen) | Menu Central (Launchpad) |
+| :---: | :---: |
+| ![Connexion Process Architect](docs/screenshots/01-login-split.jpg) | ![Menu Central Launchpad](docs/screenshots/02-launchpad.jpg) |
+
+### Studio BPMN 2.0 — 3 Vues Synchronisées
+**Diagramme BPMN 2.0 (Vue Normale)**
+![Studio — Diagramme BPMN 2.0](docs/screenshots/05-studio-diagramme-bpmn.jpg)
+
+**Vue Swimlanes (Pool Externe & Lanes Internes)**
+![Studio — Vue Swimlanes](docs/screenshots/06-studio-swimlanes.jpg)
+
+**Vue Flux Animés (Isométrique)**
+![Studio — Vue Flux Animés](docs/screenshots/07-studio-flux-animes.jpg)
+
+### Simulation, Agents IA & Gouvernance Projets
+| Simulation Interactive de Parcours & SLA | Échanges & 5 Agents IA Collaborateurs |
+| :---: | :---: |
+| ![Simulation interactive](docs/screenshots/08-simulation-parcours.jpg) | ![5 Agents IA Collaborateurs](docs/screenshots/03-agents-ia-echanges.jpg) |
+
+| Galerie Projets du Studio | Portefeuille Projets & Processus |
+| :---: | :---: |
+| ![Galerie Projets Studio](docs/screenshots/04-studio-galerie-projets.jpg) | ![Portefeuille Projets](docs/screenshots/09-portefeuille-projets.png) |
+
+**Agenda & Synchronisation Microsoft Outlook**
+![Agenda & Synchronisation Outlook](docs/screenshots/10-agenda-outlook.jpg)
+
+---
+
+## ✨ 3. Fonctionnalités Principales
 
 ### 2.1 Studio BPMN 2.0 Multi-Vues
 - **3 moteurs de visualisation synchronisés en temps réel** :
@@ -79,7 +111,7 @@ Disponibles dans l'onglet **Échanges** (mention `@`) et **strictement isolés p
 
 ---
 
-## 🏗️ 3. Architecture Technique
+## 🏗️ 4. Architecture Technique
 
 ```text
 ┌────────────────────────────────────────────────────────────────┐
@@ -126,7 +158,7 @@ process-architect-mcp/
 
 ---
 
-## 📂 4. Scénarios de Démonstration Inclus
+## 📂 5. Scénarios de Démonstration Inclus
 
 Au premier démarrage, la base SQLite initialise automatiquement **2 projets complets** (chacun en version `AS-IS` et `TO-BE`) :
 1. **Demande de rachat partiel — Épargne Retraite** : dépôt Adhérent, contrôle pièces, relance + passerelle événementielle 30 jours (`P30D`), éligibilité & nantissement, calcul fiscal, seuil `≥ 50 000 €`, double validation manager avec branche de refus, ordonnancement SEPA.
@@ -134,7 +166,7 @@ Au premier démarrage, la base SQLite initialise automatiquement **2 projets com
 
 ---
 
-## 🚀 5. Installation & Lancement Rapide
+## 🚀 6. Installation & Lancement Rapide
 
 ### Prérequis
 - **Python 3.12+**
@@ -175,7 +207,7 @@ Exemple de configuration pour un client MCP (Claude Desktop, Cursor, etc.) :
 
 ---
 
-## 🔐 6. Authentification & Comptes de Test
+## 🔐 7. Authentification & Comptes de Test
 
 Au premier lancement, un écran de connexion s'affiche. Vous pouvez :
 - **Créer un nouveau compte** directement depuis l'onglet **Créer un compte**, ou
@@ -187,7 +219,7 @@ Au premier lancement, un écran de connexion s'affiche. Vous pouvez :
 
 ---
 
-## 🧪 7. Tests Automatisés & Build
+## 🧪 8. Tests Automatisés & Build
 
 ### Tests Backend & Moteur MCP (Python / Pytest)
 ```powershell
@@ -208,6 +240,6 @@ npm run build
 
 ---
 
-## 📄 8. Licence
+## 📄 9. Licence
 
 Ce logiciel est distribué sous licence open-source **MIT**. Les utilisateurs restent seuls responsables des spécifications, processus et tests métier conçus à l'aide de la plateforme.
